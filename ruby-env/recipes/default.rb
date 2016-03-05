@@ -25,7 +25,7 @@ end
 template ".bash_profile" do
   source ".bash_profile.erb"
   path   "/home/#{node['ruby-env']['user']}/.bash_profile"
-  mode   0655
+  mode   0755
   owner  node['ruby-env']['user']
   group  node['ruby-env']['group']
   not_if "grep rbenv ~/.bash_profile", environment: { :'HOME' => "/home/#{node['ruby-env']['user']}" }
