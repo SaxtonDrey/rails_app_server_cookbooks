@@ -4,8 +4,27 @@
 this is usual rails app-server and CI server cookbooks for AWS opsworks.
 
 ## how to use
+
+for app servers
+- Setup
+  * selinux::disabled
+  * git
+  * yum-epel
+  * nginx
+  * nodejs
+  * ruby-env
+  * imagemagick
+  * mysql::client
+ 
+- Configure
+  * user
+  * nginx-conf
+  * app_dir
+  
 ```
-{
+{ "app": {
+  "name": "app_name"
+  },
   "user": "deploy",
   "ruby-env": {
     "user": "deploy",
