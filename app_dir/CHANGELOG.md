@@ -1,11 +1,11 @@
-chmod CHANGELOG
-===============
+app_dir CHANGELOG
+=================
 
-This file is used to list changes made in each version of the chmod cookbook.
+This file is used to list changes made in each version of the app_dir cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of chmod
+- [your_name] - Initial release of app_dir
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
