@@ -35,3 +35,29 @@ for app servers
   }
 }
 ```
+
+for CI server(Jenkins)
+- Setup
+  * git
+  * jenkins::java
+  * jenkins::master
+
+- Configure
+  * jenkins-plugins
+ 
+```
+{"jenkins-plugins": [
+	github,
+	git,
+	github-api,
+	git-client,
+	run-condition,
+	run-condition-extras,
+	flexible-publish,
+	conditional-buildstep,
+	build-keeper-plugin,
+	parameterized-trigger
+]
+}
+
+```
