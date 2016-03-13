@@ -14,6 +14,6 @@
 	  recursive true
 	  mode 0755
 	  action :create
-	  not_if { File.exists d }
+	  not_if { Dir.exist? d }
 	end
 }
