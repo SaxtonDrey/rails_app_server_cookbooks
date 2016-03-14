@@ -15,6 +15,7 @@ for app servers
   * ruby-env
   * imagemagick
   * mysql::client
+  * codedeploy
  
 - Configure
   * user
@@ -32,6 +33,9 @@ for app servers
     "version": "2.2.2",
     "rbenv_url": "https://github.com/sstephenson/rbenv",
     "ruby-build_url": "https://github.com/sstephenson/ruby-build" 
+  },
+  "codedeploy":{
+    "region": "ap-northeast-1"
   }
 }
 ```
@@ -43,10 +47,10 @@ for CI server(Jenkins)
   * jenkins::master
 
 - Configure
-  * jenkins-plugins
+  * jenkins_plugins
  
 ```
-{"jenkins-plugins": [
+{"jenkins_plugins": [
 	github,
 	git,
 	github-api,
@@ -56,7 +60,8 @@ for CI server(Jenkins)
 	flexible-publish,
 	conditional-buildstep,
 	build-keeper-plugin,
-	parameterized-trigger
+	parameterized-trigger,
+  role-strategy
 ]
 }
 
