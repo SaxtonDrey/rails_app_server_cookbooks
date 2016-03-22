@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-%W(/var/log/#{node["app"]["name"]} /var/tmp/#{node["app"]["name"]} /var/www/#{node["app"]["name"]} ).each { |d|  
+%W(/var/log/#{node["app"]["name"]} /tmp/#{node["app"]["name"]} /var/www/#{node["app"]["name"]} ).each { |d|  
 	directory d do
 	  owner node["user"]
 	  group node["user"]
