@@ -8,7 +8,7 @@
 #
 
 # install openssl-devel and sqlite-devel
-%w{openssl-devel sqlite-devel readline-devel libffi-dev}.each do |pkg|
+%w{openssl-devel sqlite-devel readline-devel libffi-devel}.each do |pkg|
   package pkg do
     action :install
   end
