@@ -6,5 +6,6 @@ export RAILS_ENV="<%= node['rails']['env'] %>"
 export DB_URL="<%= node['rails']['db_url'] %>"
 export DB_PASSWORD="<%= node['rails']['db_password'] %>"
 export DB_USERNAME="<%= node['rails']['db_username'] %>"
+export SECRET_KEY_BASE="<%= node['rails']['secret_key'] %>"
 <% end %>
 eval "$(rbenv init -)"
